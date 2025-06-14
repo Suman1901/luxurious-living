@@ -1,0 +1,575 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: var(--fontColor);
+}
+:root{
+    --highlight-color: #d5ae2f;
+    --fontColor: white;
+    --text-highlight:#fed23f;
+    --heading-font: "Antic Didone", serif;
+    --section-bgColor: rgb(16, 16, 16);
+    
+}
+body{
+    background: #222222 !important;
+}
+/* header */
+.up-sec{
+    width: 100%;
+    height: 3rem;
+    background: var(--highlight-color);
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.phone-icon-sec, .email-icon-sec{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.number{
+    padding-left: 1rem;
+}
+.emailId{
+    padding-left: 1rem;
+}
+.header{
+    z-index: 2;
+    position: relative;
+}  
+.menu-bar{
+    padding: 7px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #27262694;
+    position: relative;
+}
+
+.menus .menu-lists{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 30vw;
+}
+.menu-lists li{
+    list-style: none;
+}
+.menu-lists li a{
+    text-decoration: none;
+    color: var(--fontColor);
+}
+.menu-lists li .home{
+    color: var(--text-highlight);
+}
+
+/* banner section */
+.banner{
+    background-image: url(images/banner-img.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+.tripul-bar{
+    display: none;
+}
+.tripul-bar .fas.fa-bars{
+    font-size: 1.3rem;
+}
+.text-container{
+    width: 100%;
+    bottom: -5rem;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner .banner-containtSec{
+    width: 46%;
+    background: #0000006b;;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+.banner-containtSec .containt{
+    font-family: var(--heading-font);
+    color: var(--text-highlight);
+    font-weight: 500;
+    text-align: center;
+}
+.getNow-btn{
+    background: #00000047;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin-top: 3rem;
+}
+.getNow-btn .fas.fa-chevron-down{
+    padding-left: 0.6rem;
+}
+
+/* Leading Interior section */
+
+.leadingInterior{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.leadingInterior .leadingInterior-img{
+    height: 30rem;
+    background-image: url(images/Leading\ Interior.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    margin-bottom: 2rem;
+}
+.leading-text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.headingText{
+    font-family: var(--heading-font);
+    color: var(--text-highlight);
+    font-weight: 500;
+    text-align: center;
+}
+.section-subText{
+    text-align: center;
+
+    font-weight: 300;
+}
+
+
+
+/* Interior Needs */
+#interiorNeeds-sec{
+    background: var(--section-bgColor);
+    padding: 3rem 0;
+}
+.interior-img{
+    background-image: url(images/balconi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13rem;
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 23px;
+}
+.interiorBtn{
+    background: #3030308f;
+    border: none;
+    padding: 0.3rem;
+    width: 8rem;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1rem;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-family: var(--heading-font);
+    color: var(--fontColor);
+    font-weight: 600;
+}
+.section-subText.interiorSubText{
+    width: 37%;
+    margin: 1.3rem auto 0 auto;
+}
+#interiorNeeds-sec .interior-img-sec{
+    margin-top: 2rem;
+}
+.interior-img.living-Dining{
+    background-image: url(images/living&dining.jpg);
+}
+.interior-img.Bedroom{
+    background-image: url(images/bedroom.jpg);
+}
+
+
+
+/* our Services */
+#ourServices-sec{
+    background-image: url(images/our-service-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.serviceBgBox{
+    width: 100%;
+    height: 100%;
+    background: #000000bf;
+    position: relative;
+    padding: 3rem 0;
+}
+.typeOfService{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ourServices{
+    margin-top: 2rem;
+}
+
+
+/* Why Choose Us */
+
+#chooseUs{
+    padding: 3rem 5%;
+    background: var(--section-bgColor);
+}
+.reasone{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 1.3rem;
+}
+.reasone .reasone-heading{
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: initial;
+}
+.reasone .reasoneText{
+    color: black;
+    text-align: center;
+    margin-top: 0.7rem;
+}
+.chooseReasone{
+    margin-top: 2rem;
+}
+.reason-e{
+    background: #d5ae2f;
+}
+.reason-e .reasone-heading{
+    color: var(--fontColor);
+}
+.reason-e .reasoneText{
+    color: var(--fontColor);
+}
+
+
+/* About Us */
+.aboutUs{
+    padding: 3rem 5%;
+}
+.about-sub-heading{
+    text-align: center;
+    width: 59%;
+    margin: 1.3rem auto 0 auto;
+}
+.aboutSubText{
+    max-width: 80%;
+    margin: 1rem auto;
+}
+.aboutSubText code{
+    color: rgb(0, 0, 244);
+    cursor: pointer;
+}
+
+
+/* Client Testimonials */
+.testimonials-sec{
+    background: var(--section-bgColor);
+    padding: 3rem 5%;
+}
+.reatings-sec{
+    margin-top: 2.5rem;
+}
+.reatings{
+    border-right: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials-sec .reating-sec{
+
+}
+.reatings #countOfReating{
+    width: 60%;
+    text-align: center;
+    line-height: 15px;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+.comments{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-review{
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.user-img-sec{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userName{
+    margin: 0;
+}
+.user-review .user-comment{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.comments .fas.fa-chevron-down{
+    color: var(--highlight-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* project details */
+
+.project-details-sec{
+    padding: 3rem 5%;
+}
+.project-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-details .count{
+    font-family: var(--heading-font);
+    color: var(--highlight-color);
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+.project-details .countOfText{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Tell Us About Your Project */
+.user-input-sec{
+    padding: 2rem 0;
+}
+
+#gendar{
+    color: rgb(107 102 102);
+}
+.input-bgImage img{
+    border-radius: 12rem 0 0 0;
+}
+#messageBox{
+    color: rgb(107 102 102);
+}
+
+.form .input{
+    background: #302f2f;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form .fullName{
+    margin-bottom: 10px;
+}
+.inputNumber{
+    width: 34%;
+}
+.email input{
+    width: 50%;
+    margin: 10px 0;
+}
+#messageBox{
+    width: 85%;
+}
+.input-sec-img{
+    overflow: hidden;
+}
+
+
+/* footer */
+.footer{
+    background: rgb(34 32 32);
+    padding: 3rem 5%;
+    box-shadow: -3px -3px 12px 0px #d5ae2f94;
+    margin-top: 3rem;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.footer .heading{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.services{
+    text-align: center;
+    padding: 0;
+}
+.services li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.services li .service-type{
+    text-decoration: none;
+    color: var(--fontColor);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.service-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foot-bordar{
+    width: 100%;
+    height: 2rem;
+    background: var(--highlight-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+}
+.copy-right span{
+    font-size: 0.5rem;
+}
+.copy-right{
+    display: flex;
+    align-items: center;
+}
+.social-icons{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1366x) {
+    .menus .menu-lists{
+        width: 40vw;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .menus .menu-lists{
+        width: 40vw;
+    }
+    .reatings{
+        border: none;
+    }
+    .input-sec-img{
+        /* display: none; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* banner and header */
+    .banner{
+        height: 80vh;
+    }
+    .up-sec{
+        display: none;
+    }
+    .menu-bar .menus{
+        display: none;
+    }
+    .menu-bar .menuList{
+        display: block !important;
+        position: absolute;
+        right: 0;
+        top: 4rem;
+        background: rgb(26, 25, 25);
+        width: 100%;
+    }
+    .menu-Bar{
+        background: rgb(26, 25, 25);
+
+    }
+    .menu-lists{
+        display: block !important;
+        text-align: center;
+    }
+    .menus .menu-lists{
+        padding: 1rem;
+        margin: 0;
+    }
+    .menu-lists li{
+        margin-bottom: 1rem;
+    }
+    .tripul-bar{
+        display: block;
+    }
+    .banner .banner-containtSec{
+        min-width: 85%;
+    }
+
+
+    /* Leading Interior section */
+    .leadingInterior{
+        padding: 2rem;
+    }
+
+
+    .section-subText.interiorSubText{
+        width: 60%;
+    }
+
+
+    /* Client Testimonials  */
+    .input-sec-img{
+        display: none;
+    }
+    .reatings{
+        border: none;
+    }
+    .user-review .user-comment{
+        width: 100%;
+    }
+
+    /* Tell Us About Your Project  */
+    .form{
+        text-align: center;
+    }
+    .form .input{
+        margin-bottom: 0.8rem;
+    }
+
+
+    /* about us  */
+    .about-sub-heading {
+        width: auto;
+    }
+}
