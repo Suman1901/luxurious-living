@@ -62,12 +62,18 @@ body{
     margin: 0;
     width: 30vw;
 }
+
 .menu-lists li{
     list-style: none;
 }
 .menu-lists li a{
     text-decoration: none;
     color: var(--fontColor);
+    transition: all ease-in-out 0.3s;
+}
+.menu-lists li a:hover{
+    color: var(--text-highlight);
+    transition: all ease-in-out 0.3s;
 }
 .menu-lists li .home{
     color: var(--text-highlight);
@@ -127,9 +133,19 @@ body{
     font-size: 1.2rem;
     border-radius: 30px;
     margin-top: 3rem;
+    transition: all ease-in-out 0.3s;
+}
+.getNow-btn:hover{
+    color: var(--text-highlight);
+    border: 1px solid var(--text-highlight);
+    transition: all ease-in-out 0.3s;
 }
 .getNow-btn .fas.fa-chevron-down{
     padding-left: 0.6rem;
+}
+.getNow-btn:hover .fas.fa-chevron-down{
+    color: var(--text-highlight);
+    transition: all ease-in-out 0.3s;
 }
 
 /* Leading Interior section */
@@ -182,6 +198,13 @@ body{
     position: relative;
     border-radius: 6px;
     margin-bottom: 23px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.interior-img:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
 }
 .interiorBtn{
     background: #3030308f;
@@ -197,6 +220,16 @@ body{
     font-family: var(--heading-font);
     color: var(--fontColor);
     font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+.interior-img:hover .interiorBtn{
+    background: rgb(16, 16, 16);
+}
+.interiorBtn:hover{
+   background: #292929e6;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 0px 7px 2px #c29c05;;
+    color: var(--text-highlight);
 }
 .section-subText.interiorSubText{
     width: 37%;
@@ -253,7 +286,13 @@ body{
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 1.3rem;
+    transition: all ease-in-out 0.3s;
 }
+.reasone:hover{
+    box-shadow: 0 0 7px 4px #d5ae2f;
+    transition: all ease-in-out 0.3s;
+}
+
 .reasone .reasone-heading{
     color: black;
     text-align: center;
@@ -399,6 +438,7 @@ body{
     border-radius: 5px;
     padding: 5px;
 }
+
 .form .fullName{
     margin-bottom: 10px;
 }
@@ -446,6 +486,11 @@ body{
     color: var(--fontColor);
     font-weight: 300;
     font-size: 0.9rem;
+    transition: all ease-in-out 0.2s;
+}
+.services li .service-type:hover{
+    color: var(--text-highlight);
+    transition: all ease-in-out 0.2s;
 }
 
 .service-list{
@@ -490,9 +535,7 @@ body{
     .reatings{
         border: none;
     }
-    .input-sec-img{
-        /* display: none; */
-    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -511,8 +554,7 @@ body{
         position: absolute;
         right: 0;
         top: 4rem;
-        background: rgb(26, 25, 25);
-        width: 100%;
+        background: rgb(44 42 42);
     }
     .menu-Bar{
         background: rgb(26, 25, 25);
@@ -521,8 +563,7 @@ body{
     .menu-lists{
         display: block !important;
         text-align: center;
-    }
-    .menus .menu-lists{
+        width: 100vw !important;
         padding: 1rem;
         margin: 0;
     }
